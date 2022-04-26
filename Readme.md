@@ -1,0 +1,1 @@
+O objetivo desse projeto é criar uma carteira digital onde eu consiga gerenciar ações e outros ativos!
