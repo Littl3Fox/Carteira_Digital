@@ -3,13 +3,16 @@
 
 #Variáveis Globais
 
+from webbrowser import Opera
+
+
 id=0  #Vai ser utilizado para identificar as várias operações
 
 #Classe
 
 class Operacao:
     
-    def __init__(self,data,nome_ativo,simbolo,ppa,quantidade,tipo,taxas):
+    def __init__(self,data,nome_ativo,simbolo,ppa,quantidade,op,tipo,taxas):
         global id
         self.identificador = id
         self.data=data
@@ -17,9 +20,36 @@ class Operacao:
         self.simbolo=simbolo
         self.ppa=ppa
         self.quantidade=quantidade
+        self.op=op
         self.tipo=tipo
         self.taxa=taxas
         id+=1
         pass
-    
-  
+
+
+    def get_id(self):
+        return self.identificador 
+
+    def get_data(self):
+        return self.data
+
+    def get_nome(self):
+        return self.nome 
+
+    def get_simbolo(self):
+        return self.simbolo  
+
+    def get_ppa(self):
+        return self.ppa 
+
+    def get_quantidade(self):
+        return self.quantidade
+        
+    def get_operacao(self):
+        return self.op
+
+    def get_tipo(self):
+        return self.tipo 
+
+    def get_taxa(self):
+        return self.taxa  

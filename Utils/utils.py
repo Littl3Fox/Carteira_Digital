@@ -11,17 +11,17 @@ def verifica_acao(nome_acao,simbolo,ppa,qnt,op,taxa):
 
         raise ValueError("Simbolo incorreto!")
     
-    if not(ppa>=0.1):
+    if not(ppa>=0):
 
         raise ValueError("Preço por ação incorreto!")
 
-    if not( qnt>=1):
+    if not( qnt>=0):
 
         raise ValueError("Quantidade incorreta!")
     if not(op.isalpha() or (op.upper()=="C" or op.upper()=="V")):
 
         raise ValueError("Operação incorreta!")
-    if not(taxa>=0.1):
+    if not(taxa>=0):
 
         raise ValueError("Taxa incorreta!")
    
