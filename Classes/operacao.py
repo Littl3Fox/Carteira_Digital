@@ -3,7 +3,6 @@
 
 #Variáveis Globais
 
-from webbrowser import Opera
 
 
 id=0  #Vai ser utilizado para identificar as várias operações
@@ -44,7 +43,7 @@ class Operacao:
 
     def get_quantidade(self):
         return self.quantidade
-        
+
     def get_operacao(self):
         return self.op
 
